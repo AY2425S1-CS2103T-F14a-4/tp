@@ -26,18 +26,38 @@ public class RemarkCommand extends Command {
     private final Index index;
     private final String remark;
 
+    /**
+     * Represents RemarkCommand class.
+     *
+     * @param index index of contact.
+     * @param remark content of remark.
+     */
     public RemarkCommand(Index index, String remark) {
         requireAllNonNull(index, remark);
 
         this.index = index;
         this.remark = remark;
     }
+
+    /**
+     * Executes command.
+     *
+     * @param model {@code Model} which the command should operate on.
+     * @return command results.
+     * @throws CommandException when execution fails.
+     */
     @Override
     public CommandResult execute(Model model) throws CommandException {
         throw new CommandException(String.format(MESSAGE_ARGUMENTS,
                 index.getOneBased(), remark));
     }
 
+    /**
+     * Checks equality between two RemarkCommand.
+     *
+     * @param other another object
+     * @return true if equal false otherwise
+     */
     @Override
     public boolean equals(Object other) {
         // short circuit if same object
