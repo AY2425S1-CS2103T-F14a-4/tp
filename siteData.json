@@ -11,7 +11,7 @@
         "justin-jiang": "Justin Jiang",
         "zheng-jie": "Zheng Jie",
         "chen-yixun": "Chen Yixun",
-        "james-doe": "James Doe",
+        "nguyen-tien-hoang": "Nguyen Tien Hoang",
         "christopher-tan": "Christopher Tan"
       },
       "headingKeywords": {}
@@ -160,6 +160,14 @@
     {
       "src": "team/krashkart.md",
       "title": "John Doe's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/nguyen.md",
+      "title": "Nguyen's Project Portfolio Page",
       "headings": {
         "project-addressbook-level-3": "Project: AddressBook Level 3"
       },
