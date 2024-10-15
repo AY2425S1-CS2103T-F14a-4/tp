@@ -3,7 +3,7 @@
 skinparam ArrowFontStyle plain
 
 Participant ":LogicManager" as logic LOGIC_COLOR
-Participant ":AddressBookParser" as abp LOGIC_COLOR
+Participant ":CampusConnectParser" as abp LOGIC_COLOR
 Participant ":EditCommandParser" as ecp LOGIC_COLOR
 Participant "command:EditCommand" as ec LOGIC_COLOR
 

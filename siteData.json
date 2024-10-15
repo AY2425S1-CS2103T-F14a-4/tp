@@ -107,7 +107,7 @@
       "src": "UserGuide.md",
       "title": "User Guide",
       "headings": {
-        "ab-3-user-guide": "AB-3 User Guide",
+        "campusconnect-user-guide": "CampusConnect User Guide",
         "quick-start": "Quick start",
         "features": "Features",
         "viewing-help-help": "Viewing help : help",
@@ -131,7 +131,7 @@
       "src": "index.md",
       "title": "",
       "headings": {
-        "addressbook-level-3": "AddressBook Level-3"
+        "campusconnect": "CampusConnect"
       },
       "headingKeywords": {}
     },
@@ -139,7 +139,7 @@
       "src": "team/blackpanther9229.md",
       "title": "Nguyen's Project Portfolio Page",
       "headings": {
-        "project-addressbook-level-3": "Project: AddressBook Level 3"
+        "project-campusconnect": "Project: CampusConnect"
       },
       "headingKeywords": {}
     },
@@ -149,18 +149,10 @@
       "headingKeywords": {}
     },
     {
-      "src": "team/johndoe.md",
-      "title": "John Doe's Project Portfolio Page",
-      "headings": {
-        "project-addressbook-level-3": "Project: AddressBook Level 3"
-      },
-      "headingKeywords": {}
-    },
-    {
       "src": "team/justin.md",
       "title": "Justin's Project Portfolio Page",
       "headings": {
-        "project-addressbook-level-3": "Project: AddressBook Level 3"
+        "project-campusconnect": "Project: CampusConnect"
       },
       "headingKeywords": {}
     },
@@ -168,7 +160,7 @@
       "src": "team/krashkart.md",
       "title": "John Doe's Project Portfolio Page",
       "headings": {
-        "project-addressbook-level-3": "Project: AddressBook Level 3"
+        "project-campusconnect": "Project: CampusConnect"
       },
       "headingKeywords": {}
     }

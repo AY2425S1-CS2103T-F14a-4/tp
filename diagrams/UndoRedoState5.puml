@@ -7,9 +7,9 @@ skinparam ClassBackgroundColor #FFFFAA
 title After command "clear"
 
 package States <<rectangle>> {
-    class State1 as "<u>ab0:AddressBook</u>"
-    class State2 as "<u>ab1:AddressBook</u>"
-    class State3 as "<u>ab3:AddressBook</u>"
+    class State1 as "<u>ab0:CampusConnect</u>"
+    class State2 as "<u>ab1:CampusConnect</u>"
+    class State3 as "<u>ab3:CampusConnect</u>"
 }
 
 State1 -[hidden]right-> State2

@@ -35,12 +35,12 @@ with(this){return _c('p',[_v("If using IDEA, follow the guide "),_c('a',{attrs:{
 with(this){return _c('li',[_c('p',[_c('strong',[_v("Set up CI")])]),_v(" "),_c('p',[_v("This project comes with a GitHub Actions config files (in "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v(".github/workflows")]),_v(" folder). When GitHub detects those files, it will run the CI for your project automatically at each push to the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("master")]),_v(" branch or to any PR. No set up required.")])])}
 },function anonymous(
 ) {
-with(this){return _c('li',[_c('p',[_c('strong',[_v("Learn the design")])]),_v(" "),_c('p',[_v("When you are ready to start coding, we recommend that you get some sense of the overall design by reading about "),_c('a',{attrs:{"href":"/tp/DeveloperGuide.html#architecture"}},[_v("AddressBook’s architecture")]),_v(".")])])}
+with(this){return _c('li',[_c('p',[_c('strong',[_v("Learn the design")])]),_v(" "),_c('p',[_v("When you are ready to start coding, we recommend that you get some sense of the overall design by reading about "),_c('a',{attrs:{"href":"/tp/DeveloperGuide.html#architecture"}},[_v("CampusConnect’s architecture")]),_v(".")])])}
 },function anonymous(
 ) {
 with(this){return _c('li',[_c('p',[_c('strong',[_v("Do the tutorials")]),_v("\nThese tutorials will help you get acquainted with the codebase.")]),_v(" "),_c('ul',[_c('li',[_c('a',{attrs:{"href":"/tp/tutorials/TracingCode.html"}},[_v("Tracing code")])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"/tp/tutorials/AddRemark.html"}},[_v("Adding a new command")])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"/tp/tutorials/RemovingFields.html"}},[_v("Removing fields")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Tue, 15 Oct 2024, 19:35:50 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Tue, 15 Oct 2024, 23:08:02 GMT+8]")])])])}
 }];
   

@@ -8,10 +8,10 @@ start
 'Since the beta syntax does not support placing the condition outside the
 'diamond we place it as the true branch instead.
 
-if () then ([command commits AddressBook])
+if () then ([command commits CampusConnect])
     :Purge redundant states;
-    :Save AddressBook to
-    addressBookStateList;
+    :Save CampusConnect to
+    campusConnectStateList;
 else ([else])
 endif
 stop
