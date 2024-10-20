@@ -1,0 +1,61 @@
+@startuml
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor LOGIC_COLOR_T4
+skinparam classBackgroundColor LOGIC_COLOR
+
+Class "{abstract}\nCommand" as Command
+Class HiddenOutside #FFFFFF
+
+package "Command Classes" as CommandClasses {
+    together {
+        Class "{abstract}\nAbstractFindCommand" as AFC
+        Class "AddCommand" as AC
+        Class "ClearCommand" as CC
+        Class "DeleteCommand" as DC
+        Class "EditCommand" as EdC
+        Class "ExitCommand" as ExC
+        Class "FindByEmailCommand" as FEC
+        Class "FindByNameCommand" as FNC
+        Class "FindByTagCommand" as FTC
+        Class "FindByPhoneCommand" as FPC
+        Class "HelpCommand" as HC
+        Class "ListCommand" as LC
+    }
+}
+HiddenOutside ..> Command
+
+AFC -u-|> Command
+AFC -[hidden]right- AC
+FEC -u-|> AFC
+FNC -u-|> AFC
+FTC -u-|> AFC
+FPC -u-|> AFC
+
+AC -u-|> Command
+AC -[hidden]right- CC
+FEC -[hidden]u- AC
+
+CC -u-|> Command
+CC -[hidden]right- DC
+FEC -[hidden]u- CC
+
+DC -u-|> Command
+DC -[hidden]right- EdC
+FEC -[hidden]u- DC
+
+EdC -u-|> Command
+EdC -[hidden]right- ExC
+FEC -[hidden]u- EdC
+
+ExC -u-|> Command
+ExC -[hidden]right- HC
+FEC -[hidden]u- ExC
+
+HC -u-|> Command
+HC -[hidden]right- LC
+FEC -[hidden]u- HC
+
+LC -u-|> Command
+FEC -[hidden]u- LC
+@enduml
