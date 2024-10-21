@@ -195,8 +195,8 @@ public class MainWindow extends UiPart<Stage> {
     private CommandResult executeCommand(String commandText) throws CommandException, ParseException {
         try {
             CommandResult commandResult = logic.execute(commandText);
-            populateTagsList(); // repopulate the tags list if the command affects it
             logger.info("Result: " + commandResult.getFeedbackToUser());
+            populateTagsList();
             resultDisplay.setFeedbackToUser(commandResult.getFeedbackToUser());
             if (commandResult.isShowHelp()) {
                 handleHelp();
