@@ -14,6 +14,7 @@ import static seedu.address.testutil.TypicalPersons.BOB;
 
 import org.junit.jupiter.api.Test;
 
+import seedu.address.model.tag.Tag;
 import seedu.address.testutil.PersonBuilder;
 
 public class PersonTest {
@@ -145,6 +146,13 @@ public class PersonTest {
         // different tags -> returns false
         editedAlice = new PersonBuilder(ALICE).withTags(VALID_TAG_HUSBAND).build();
         assertFalse(ALICE.equals(editedAlice));
+    }
+
+    @Test
+    public void hasTag() {
+        Person aliceCopy = new PersonBuilder(ALICE).build();
+        assertTrue(aliceCopy.hasTag(new Tag("friends")));
+        assertFalse(aliceCopy.hasTag(new Tag("TEST")));
     }
 
     @Test

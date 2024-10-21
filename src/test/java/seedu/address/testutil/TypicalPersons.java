@@ -20,7 +20,8 @@ import seedu.address.model.person.Person;
  * A utility class containing a list of {@code Person} objects to be used in tests.
  */
 public class TypicalPersons {
-
+    public static final String FRIEND_TAG = "friends";
+    public static final String OWES_MONEY_TAG = "owesMoney";
     public static final Person ALICE = new PersonBuilder().withName("Alice Pauline")
             .withEmail("alice@example.com")
             .withPhone("94351253")

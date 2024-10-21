@@ -114,6 +114,15 @@ public class UniquePersonList implements Iterable<Person> {
     }
 
     /**
+     * Delete a tag from a person
+     */
+    public void deletePersonTag(Person p, Tag t) {
+        requireNonNull(p);
+        Person replace = p.removeTag(t);
+        setPerson(p, replace);
+    }
+
+    /**
      * Returns the backing list as an unmodifiable {@code ObservableList}.
      */
     public ObservableList<Person> asUnmodifiableObservableList() {

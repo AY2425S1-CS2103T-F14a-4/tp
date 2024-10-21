@@ -100,6 +100,23 @@ public class Person {
     }
 
     /**
+     * Checks whether the person has the tags
+     */
+    public boolean hasTag(Tag t) {
+        return this.getTags().contains(t);
+    }
+
+    /**
+     * Remove a tag from a person
+     */
+    public Person removeTag(Tag t) {
+        Set<Tag> newTagSet = new HashSet<>();
+        newTagSet.addAll(this.getTags());
+        newTagSet.remove(t);
+        return new Person(this.name, this.phone, this.email, newTagSet);
+    }
+
+    /**
      * Returns true if both persons have the same identity and data fields.
      * This defines a stronger notion of equality between two persons.
      */

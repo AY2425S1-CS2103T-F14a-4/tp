@@ -16,7 +16,10 @@ import org.junit.jupiter.api.Test;
 
 import seedu.address.commons.core.GuiSettings;
 import seedu.address.model.person.NameContainsKeywordsPredicate;
+import seedu.address.model.person.Person;
+import seedu.address.model.tag.Tag;
 import seedu.address.testutil.CampusConnectBuilder;
+import seedu.address.testutil.PersonBuilder;
 
 public class ModelManagerTest {
 
@@ -91,6 +94,18 @@ public class ModelManagerTest {
     @Test
     public void getFilteredPersonList_modifyList_throwsUnsupportedOperationException() {
         assertThrows(UnsupportedOperationException.class, () -> modelManager.getFilteredPersonList().remove(0));
+    }
+
+    @Test
+    public void deleteTag_personInCampusConnect_successfulDeletion() {
+        Person newAlice = new PersonBuilder(ALICE).withTags("friends", "copy").build();
+        modelManager.addPerson(newAlice);
+        modelManager.deletePersonTag(newAlice, new Tag("copy"));
+
+        ModelManager copyModelManager = new ModelManager();
+        copyModelManager.addPerson(ALICE);
+
+        assertEquals(modelManager, copyModelManager);
     }
 
     @Test

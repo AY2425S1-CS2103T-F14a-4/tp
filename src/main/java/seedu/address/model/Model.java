@@ -65,6 +65,12 @@ public interface Model {
     void deletePerson(Person target);
 
     /**
+     * Delete a tag from a person.
+     * The person must exist as well as the tag
+     */
+    void deletePersonTag(Person p, Tag tag);
+
+    /**
      * Adds the given person.
      * {@code person} must not already exist in the address book.
      */
