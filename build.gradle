@@ -69,4 +69,8 @@ shadowJar {
     archiveFileName = 'CampusConnect.jar'
 }
 
+run {
+    enableAssertions = true
+}
+
 defaultTasks 'clean', 'test'
