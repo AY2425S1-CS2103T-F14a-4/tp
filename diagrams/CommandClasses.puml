@@ -21,6 +21,7 @@ package "Command Classes" as CommandClasses {
         Class "FindByPhoneCommand" as FPC
         Class "HelpCommand" as HC
         Class "ListCommand" as LC
+        Class "DeleteTagCommand" as DTC
     }
 }
 HiddenOutside ..> Command
@@ -42,6 +43,7 @@ FEC -[hidden]u- CC
 
 DC -u-|> Command
 DC -[hidden]right- EdC
+DTC -u-|> Command
 FEC -[hidden]u- DC
 
 EdC -u-|> Command
