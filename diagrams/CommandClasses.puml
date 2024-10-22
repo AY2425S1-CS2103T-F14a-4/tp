@@ -13,6 +13,7 @@ package "Command Classes" as CommandClasses {
         Class "AddCommand" as AC
         Class "ClearCommand" as CC
         Class "DeleteCommand" as DC
+        Class "DeleteTagCommand" as DTC
         Class "EditCommand" as EdC
         Class "ExitCommand" as ExC
         Class "FindByEmailCommand" as FEC
@@ -21,7 +22,7 @@ package "Command Classes" as CommandClasses {
         Class "FindByPhoneCommand" as FPC
         Class "HelpCommand" as HC
         Class "ListCommand" as LC
-        Class "DeleteTagCommand" as DTC
+        Class "UndoCommand" as UC
     }
 }
 HiddenOutside ..> Command
@@ -43,8 +44,10 @@ FEC -[hidden]u- CC
 
 DC -u-|> Command
 DC -[hidden]right- EdC
-DTC -u-|> Command
 FEC -[hidden]u- DC
+
+DTC -u-|> Command
+FEC -[hidden]u- DTC
 
 EdC -u-|> Command
 EdC -[hidden]right- ExC
@@ -59,5 +62,9 @@ HC -[hidden]right- LC
 FEC -[hidden]u- HC
 
 LC -u-|> Command
+LC -[hidden]right UC
 FEC -[hidden]u- LC
+
+UC -u-|> Command
+FEC -[hidden]u- UC
 @enduml
