@@ -23,6 +23,7 @@ package "Command Classes" as CommandClasses {
         Class "HelpCommand" as HC
         Class "ListCommand" as LC
         Class "UndoCommand" as UC
+        Class "RedoCommand" as RC
     }
 }
 HiddenOutside ..> Command
@@ -66,5 +67,9 @@ LC -[hidden]right UC
 FEC -[hidden]u- LC
 
 UC -u-|> Command
+UC -[hidden]right RC
 FEC -[hidden]u- UC
+
+RC -u-|> Command
+FEC -[hidden]u- RC
 @enduml
