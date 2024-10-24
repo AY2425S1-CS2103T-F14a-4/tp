@@ -9,7 +9,7 @@ Class HiddenOutside #FFFFFF
 
 package "Command Classes" as CommandClasses {
     together {
-        Class "{abstract}\nAbstractFindCommand" as AFC
+        Class "SuperFindCommand" as AFC
         Class "AddCommand" as AC
         Class "ClearCommand" as CC
         Class "DeleteCommand" as DC
