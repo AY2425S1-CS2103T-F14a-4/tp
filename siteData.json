@@ -105,8 +105,8 @@
     },
     {
       "src": "UserGuide.md",
-      "title": "User Guide",
       "headings": {
+        "layout-default-md-title-and-quot-user-guide-and-quot-pagenav-3": "``---\nlayout: default.md\ntitle: &quot;User Guide&quot;\npageNav: 3",
         "campusconnect-user-guide": "CampusConnect User Guide",
         "quick-start": "Quick start",
         "features": "Features",
@@ -118,6 +118,7 @@
         "deleting-a-person-delete": "Deleting a person : delete",
         "deleting-a-person-s-tag-deletetag": "Deleting a person's tag : deletetag",
         "undo-a-command-undo": "Undo a command : undo",
+        "redo-a-command-redo": "Redo a command: redo",
         "clearing-all-entries-clear": "Clearing all entries : clear",
         "exiting-the-program-exit": "Exiting the program : exit",
         "saving-the-data": "Saving the data",
