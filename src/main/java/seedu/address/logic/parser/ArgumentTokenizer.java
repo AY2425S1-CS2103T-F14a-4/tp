@@ -1,9 +1,17 @@
 package seedu.address.logic.parser;
 
+import static seedu.address.logic.parser.CliSyntax.PREFIX_CCA_TAG;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_DEFAULT_TAG;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_MODULE_TAG;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_OTHERS_TAG;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_TAG_TEMPLATE;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import com.sun.jdi.connect.Connector;
 
 /**
  * Tokenizes arguments string of the form: {@code preamble <prefix>value <prefix>value ...}<br>
@@ -14,6 +22,27 @@ import java.util.stream.Collectors;
  *    in the above example.<br>
  */
 public class ArgumentTokenizer {
+
+    /**
+     * Carries out tokenization but accommodates for the new tag prefixes.
+     * @param argsString Arguments string of the form: {@code preamble <prefix>value <prefix>value ...}
+     * @param prefixes   Prefixes to tokenize the arguments string with
+     * @return           ArgumentMultimap object that maps prefixes to their arguments
+     */
+    public static ArgumentMultimap tokenizeBetter(String argsString, Prefix... prefixes) {
+        ArrayList<Prefix> listOfPrefixes = new ArrayList<>(Arrays.asList(prefixes));
+
+        // check if the Tag template is present, this means to check for all tag prefixes
+        // if tag template found, then remove the template and add all prefixes
+        if (listOfPrefixes.contains(PREFIX_TAG_TEMPLATE)) {
+            listOfPrefixes.remove(PREFIX_TAG_TEMPLATE);
+            listOfPrefixes.addAll(List.of(PREFIX_CCA_TAG, PREFIX_DEFAULT_TAG, PREFIX_MODULE_TAG, PREFIX_OTHERS_TAG));
+            prefixes = listOfPrefixes.toArray(prefixes);
+        }
+        List<PrefixPosition> positions = findAllPrefixPositions(argsString, prefixes);
+        return extractArguments(argsString, positions);
+    }
+
 
     /**
      * Tokenizes an arguments string and returns an {@code ArgumentMultimap} object that maps prefixes to their
