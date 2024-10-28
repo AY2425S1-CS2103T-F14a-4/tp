@@ -1,5 +1,7 @@
 package seedu.address.logic.commands;
 
+import static seedu.address.logic.parser.CliSyntax.PREFIX_PHONE;
+
 import seedu.address.model.person.NameContainsKeywordsPredicate;
 
 /**
@@ -7,7 +9,8 @@ import seedu.address.model.person.NameContainsKeywordsPredicate;
  * Keyword matching is case-insensitive.
  */
 public class FindByNameCommand extends SuperFindCommand {
-    public static final String COMMAND_WORD = "find n/";
+    public static final String COMMAND_WORD = SuperFindCommand.COMMAND_WORD + PREFIX_PHONE;
+
 
     public static final String MESSAGE_USAGE = COMMAND_WORD + ": Finds all persons whose names "
             + "contain any of the specified keywords (case-insensitive) and displays them as a list with indices.\n"

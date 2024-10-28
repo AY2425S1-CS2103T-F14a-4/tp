@@ -1,5 +1,7 @@
 package seedu.address.logic.commands;
 
+import static seedu.address.logic.parser.CliSyntax.PREFIX_TAG_TEMPLATE;
+
 import seedu.address.model.person.TagContainsKeywordsPredicate;
 
 /**
@@ -7,7 +9,7 @@ import seedu.address.model.person.TagContainsKeywordsPredicate;
  * Keyword matching is case-insensitive.
  */
 public class FindByTagCommand extends SuperFindCommand {
-    public static final String COMMAND_WORD = "find t/";
+    public static final String COMMAND_WORD = SuperFindCommand.COMMAND_WORD + PREFIX_TAG_TEMPLATE;
 
     public static final String MESSAGE_USAGE = COMMAND_WORD + ": Finds all persons whose tags "
             + "contain any of the specified keywords (case-insensitive) and displays them as a list with indices.\n"

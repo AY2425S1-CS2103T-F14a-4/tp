@@ -1,6 +1,10 @@
 package seedu.address.logic.commands;
 
 import static java.util.Objects.requireNonNull;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_EMAIL;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_MODULE_TAG;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_PHONE;
 
 import seedu.address.commons.util.ToStringBuilder;
 import seedu.address.logic.Messages;
@@ -13,20 +17,16 @@ import seedu.address.model.person.ContainsKeywordsPredicate;
 public class SuperFindCommand extends Command {
 
     public static final String COMMAND_WORD = "find";
-    public static final String NAME_COMMAND_WORD = " n/";
-    public static final String EMAIL_COMMAND_WORD = " e/";
-    public static final String PHONE_COMMAND_WORD = " p/";
-    public static final String TAG_COMMAND_WORD = " t/";
 
     public static final String MESSAGE_USAGE = COMMAND_WORD + ": Finds all persons whose names, phone numbers, emails "
             + "or tags contain any of the specified keywords (case-insensitive) and displays"
             + "them as a list with indices.\n"
             + "Parameters: KEYWORD [MORE_KEYWORDS]...\n"
             + "Example:\n"
-            + COMMAND_WORD + NAME_COMMAND_WORD + "alice bob charlie\n"
-            + COMMAND_WORD + EMAIL_COMMAND_WORD + "bob@gmail.com\n"
-            + COMMAND_WORD + PHONE_COMMAND_WORD + "12345678\n"
-            + COMMAND_WORD + TAG_COMMAND_WORD + "CS2100_classmate\n";
+            + COMMAND_WORD + PREFIX_NAME + "alice bob charlie\n"
+            + COMMAND_WORD + PREFIX_EMAIL + "bob@gmail.com\n"
+            + COMMAND_WORD + PREFIX_PHONE + "12345678\n"
+            + COMMAND_WORD + PREFIX_MODULE_TAG + "CS2100";
 
     public static final String MESSAGE_NO_PERSONS_FOUND = "No persons found!";
 

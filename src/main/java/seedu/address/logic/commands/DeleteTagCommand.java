@@ -1,6 +1,8 @@
 package seedu.address.logic.commands;
 
 import static java.util.Objects.requireNonNull;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_OTHERS_TAG;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_TAG_TEMPLATE;
 
 import java.util.List;
 
@@ -13,15 +15,15 @@ import seedu.address.model.tag.Tag;
 
 /**
  * Implements command to delete a tag from a person
- * format: deletetag [INDEX] t/[TAG NAME]
+ * format: deletetag [INDEX] t?/[TAG NAME]
  */
 public class DeleteTagCommand extends Command {
     public static final String COMMAND_WORD = "deletetag";
 
     public static final String MESSAGE_USAGE = COMMAND_WORD
             + ": Deletes tag from the person identified by the index number used in the displayed person list.\n"
-            + "Parameters: INDEX (must be a positive integer) [TAG NAME]\n"
-            + "Example: " + COMMAND_WORD + " 1 " + " hello_world";
+            + "Parameters: INDEX (must be a positive integer) " + PREFIX_TAG_TEMPLATE + "TAG NAME\n"
+            + "Example: " + COMMAND_WORD + " 1 " + PREFIX_OTHERS_TAG + "hello_world";
 
     private final Index targetIndex;
     private final Tag targetTag;
