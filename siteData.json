@@ -116,7 +116,7 @@
         "editing-a-person-edit": "Editing a person : edit",
         "locating-persons-by-contact-information-find": "Locating persons by contact information: find",
         "deleting-a-person-delete": "Deleting a person : delete",
-        "deleting-a-person-s-tag-deletetag": "Deleting a person's tag : deletetag",
+        "deleting-a-person-s-tag-deltag": "Deleting a person's tag : deltag",
         "undo-a-command-undo": "Undo a command : undo",
         "redo-a-command-redo": "Redo a command: redo",
         "clearing-all-entries-clear": "Clearing all entries : clear",

@@ -14,10 +14,10 @@ box Model MODEL_COLOR_T1
 participant "m:Model" as Model MODEL_COLOR
 end box
 
-[-> LogicManager : execute("deletetag 1 t/test")
+[-> LogicManager : execute("deltag 1 t/test")
 activate LogicManager
 
-LogicManager -> CampusConnectParser : parseCommand("deletetag 1 t/test")
+LogicManager -> CampusConnectParser : parseCommand("deltag 1 t/test")
 activate CampusConnectParser
 
 create DeleteTagCommandParser

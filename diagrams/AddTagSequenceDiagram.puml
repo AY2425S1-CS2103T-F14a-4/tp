@@ -11,10 +11,10 @@ participant "r:CommandResult" as CommandResult LOGIC_COLOR
 participant "m:Model" as Model MODEL_COLOR
 end box
 
-[-> LogicManager : execute("addTag 2 t/mate")
+[-> LogicManager : execute("addtag 2 t/mate")
 activate LogicManager
 
-LogicManager -> CampusConnectParser : parseCommand("addTag 2 t/mate")
+LogicManager -> CampusConnectParser : parseCommand("addtag 2 t/mate")
 activate CampusConnectParser
 
 create AddTagCommandParser
