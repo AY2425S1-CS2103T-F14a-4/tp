@@ -8,6 +8,9 @@ participant ":CampusConnectParser" as CampusConnectParser LOGIC_COLOR
 participant ":AddTagCommandParser" as AddTagCommandParser LOGIC_COLOR
 participant "a:AddTagCommand" as AddTagCommand LOGIC_COLOR
 participant "r:CommandResult" as CommandResult LOGIC_COLOR
+endbox
+
+box Model MODEL_COLOR_T1
 participant "m:Model" as Model MODEL_COLOR
 end box
 
@@ -56,23 +59,7 @@ activate Model
 Model --> AddTagCommand : personToEdit
 deactivate Model
 
-AddTagCommand -> AddTagCommand : createEditedPerson(personToEdit, addTagDescriptor)
-
-AddTagCommand --> AddTagCommand : editedPerson
-
-AddTagCommand -> Model : deletePerson(personToEdit)
-activate Model
-
-Model --> AddTagCommand
-deactivate Model
-
-AddTagCommand -> Model : insertPerson(editedPerson, index)
-activate Model
-
-Model --> AddTagCommand
-deactivate Model
-
-AddTagCommand -> Model : updateFilteredPersonList(PREDICATE_SHOW_ALL_PERSONS)
+AddTagCommand -> Model : addPersonTags(person, tags)
 activate Model
 
 Model --> AddTagCommand

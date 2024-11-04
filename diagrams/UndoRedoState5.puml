@@ -4,19 +4,23 @@ skinparam ClassFontColor #000000
 skinparam ClassBorderColor #000000
 skinparam ClassBackgroundColor #FFFFAA
 
-title After command "clear"
+title After command "redo"
 
-package States <<rectangle>> {
-    class State1 as "<u>ab0:CampusConnect</u>"
-    class State2 as "<u>ab1:CampusConnect</u>"
-    class State3 as "<u>ab3:CampusConnect</u>"
+package Future <<rectangle>> {
+    class State3 as "<u>cc2:CampusConnect</u>">"
 }
 
+package History <<rectangle>> {
+    class State1 as "<u>cc0:CampusConnect</u>"
+}
+
+
+class State2 as "<u>cc1:CampusConnect</u>"
+History -[hidden]left-> Future
 State1 -[hidden]right-> State2
 State2 -[hidden]right-> State3
 
 class Pointer as "Current State" #FFFFFF
 
-Pointer -up-> State3
-note right on link: State ab2 deleted.
+Pointer -up-> State2
 @end

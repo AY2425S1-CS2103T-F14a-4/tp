@@ -6,12 +6,16 @@ skinparam ClassBackgroundColor #FFFFAA
 
 title After command "add n/David"
 
-package States <<rectangle>> {
-    class State1 as "<u>ab0:CampusConnect</u>"
-    class State2 as "<u>ab1:CampusConnect</u>"
-    class State3 as "<u>ab2:CampusConnect</u>"
+package Future {
+
 }
 
+package History <<rectangle>> {
+    class State1 as "<u>cc0:CampusConnect</u>"
+    class State2 as "<u>cc1:CampusConnect</u>"
+}
+class State3 as "<u>cc2:CampusConnect</u>"
+History -[hidden]left-> Future
 State1 -[hidden]right-> State2
 State2 -[hidden]right-> State3
 

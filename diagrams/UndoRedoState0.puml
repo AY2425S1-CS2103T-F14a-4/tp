@@ -6,15 +6,16 @@ skinparam ClassBackgroundColor #FFFFAA
 
 title Initial state
 
-package States {
-    class State1 as "<u>ab0:CampusConnect</u>"
-    class State2 as "<u>ab1:CampusConnect</u>"
-    class State3 as "<u>ab2:CampusConnect</u>"
+package Future {
+
 }
-State1 -[hidden]right-> State2
-State2 -[hidden]right-> State3
-hide State2
-hide State3
+
+package History {
+
+}
+
+class State1 as "<u>cc0:CampusConnect</u>"
+History -[hidden]left-> Future
 
 class Pointer as "Current State" #FFFFFF
 Pointer -up-> State1
