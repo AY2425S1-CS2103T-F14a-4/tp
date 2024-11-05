@@ -107,8 +107,8 @@
     },
     {
       "src": "UserGuide.md",
+      "title": "User Guide",
       "headings": {
-        "layout-default-md-title-and-quot-user-guide-and-quot-pagenav-3": "``---\nlayout: default.md\ntitle: &quot;User Guide&quot;\npageNav: 3",
         "campusconnect-user-guide": "CampusConnect User Guide",
         "quick-start": "Quick start",
         "features": "Features",
