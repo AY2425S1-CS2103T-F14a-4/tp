@@ -1,0 +1,43 @@
+@startuml
+!include style.puml
+
+skinparam arrowThickness 1.1
+skinparam arrowColor LOGIC_COLOR_T4
+skinparam classBackgroundColor LOGIC_COLOR
+
+Class "{abstract}\nCommand" as Command
+Class HiddenOutside #FFFFFF
+
+
+package "Original AB3 Classes" {
+    Class "AddCommand" as AC
+    Class "ClearCommand" as CC
+    Class "DeleteCommand" as DC
+    Class "EditCommand" as EdC
+    Class "ExitCommand" as ExC
+    Class "HelpCommand" as HC
+    Class "ListCommand" as LC
+}
+
+HiddenOutside ..> Command
+
+AC -u-|> Command
+AC -[hidden]right- CC
+
+CC -u-|> Command
+CC -[hidden]right- DC
+
+DC -u-|> Command
+DC -[hidden]right- EdC
+
+EdC -u-|> Command
+EdC -[hidden]right- ExC
+
+ExC -u-|> Command
+ExC -[hidden]right- HC
+
+HC -u-|> Command
+HC -[hidden]right- LC
+
+LC -u-|> Command
+@enduml
