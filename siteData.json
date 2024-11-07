@@ -119,7 +119,7 @@
         "editing-a-person-edit": "Editing a person : edit",
         "locating-persons-by-contact-information-find": "Locating persons by contact information: find",
         "deleting-a-person-delete": "Deleting a person : delete",
-        "adds-tags-to-a-specific-person-addtag": "Adds tags to a specific person : addtag",
+        "adding-tags-to-a-specific-person-addtag": "Adding tags to a specific person : addtag",
         "deleting-a-person-s-tag-deltag": "Deleting a person's tag : deltag",
         "categorizing-a-tag-cattag": "Categorizing a tag : cattag",
         "undo-a-command-undo": "Undo a command : undo",
