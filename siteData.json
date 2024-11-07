@@ -62,7 +62,8 @@
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
         "deleting-a-person": "Deleting a person",
-        "saving-data": "Saving data",
+        "finding-a-person": "Finding a person",
+        "deleting-a-tag-from-a-person": "Deleting a tag from a person",
         "appendix-future-features": "Appendix: Future features",
         "appendix-effort": "Appendix: Effort"
       },
