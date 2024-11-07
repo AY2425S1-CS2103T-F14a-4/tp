@@ -52,7 +52,6 @@
         "common-classes": "Common classes",
         "implementation": "Implementation",
         "undo-redo-feature": "Undo/redo feature",
-        "proposed-data-archiving": "[Proposed] Data archiving",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
         "product-scope": "Product scope",
@@ -64,7 +63,7 @@
         "launch-and-shutdown": "Launch and shutdown",
         "deleting-a-person": "Deleting a person",
         "saving-data": "Saving data",
-        "future-features": "Future features",
+        "appendix-future-features": "Appendix: Future features",
         "appendix-effort": "Appendix: Effort"
       },
       "headingKeywords": {}
@@ -113,6 +112,7 @@
         "quick-start": "Quick start",
         "features": "Features",
         "command-summary": "Command summary",
+        "commands": "Commands",
         "viewing-help-help": "Viewing help : help",
         "adding-a-person-add": "Adding a person : add",
         "listing-all-persons-list": "Listing all persons : list",
@@ -129,7 +129,7 @@
         "saving-the-data": "Saving the data",
         "editing-the-data-file": "Editing the data file",
         "faq": "FAQ",
-        "known-issues": "Known issues"
+        "known-issues": "Known Issues"
       },
       "headingKeywords": {}
     },
@@ -150,8 +150,19 @@
       "headingKeywords": {}
     },
     {
+      "src": "team/chrisjohntan.md",
+      "title": "Christopher's Project Portfolio Page",
+      "headings": {
+        "project-campusconnect": "Project: CampusConnect"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "team/cyx22222003.md",
-      "headings": {},
+      "title": "Yi Xun's Project Portfolio Page",
+      "headings": {
+        "project-campusconnect": "Project: CampusConnect"
+      },
       "headingKeywords": {}
     },
     {
@@ -164,7 +175,7 @@
     },
     {
       "src": "team/krashkart.md",
-      "title": "John Doe's Project Portfolio Page",
+      "title": "Zheng Jie's Project Portfolio Page",
       "headings": {
         "project-campusconnect": "Project: CampusConnect"
       },
