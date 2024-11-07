@@ -18,6 +18,8 @@ Class Email
 Class Name
 Class Phone
 Class Tag
+Class TagManager
+Class "<<enumeration>>\nTagCategory" as TagCategory
 
 Class I #FFFFFF
 }
@@ -35,11 +37,14 @@ ModelManager -right-> "1" UserPrefs
 UserPrefs .up.|> ReadOnlyUserPrefs
 
 CampusConnect *--> "1" UniquePersonList
-UniquePersonList --> "~* all" Person
+UniquePersonList -left-> "~* all" Person
+UniquePersonList --> "1" TagManager
+TagManager --> "~* all" Tag
 Person *--> "1" Name
 Person *--> "1" Phone
 Person *--> "1" Email
 Person *--> "*" Tag
+Tag -left-> "1" TagCategory
 
 Person -[hidden]up--> I
 UniquePersonList -[hidden]right-> I
