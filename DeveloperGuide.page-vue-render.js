@@ -11,7 +11,7 @@ with(this){return _c('h1',{attrs:{"id":"campusconnect-developer-guide"}},[_v("Ca
 with(this){return _c('h2',{attrs:{"id":"acknowledgements"}},[_c('strong',[_v("Acknowledgements")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#acknowledgements","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("Our name, "),_c('strong',[_v("CampusConnect")]),_v(", was inspired by the NUS internship portal "),_c('a',{attrs:{"href":"https://nus-csm.symplicity.com/"}},[_c('strong',[_v("TalentConnect")])]),_v(".")])])}
+with(this){return _c('ul',[_c('li',[_v("Our name, "),_c('strong',[_v("CampusConnect")]),_v(", was inspired by the NUS internship portal "),_c('a',{attrs:{"href":"https://nus-csm.symplicity.com/"}},[_c('strong',[_v("TalentConnect")])]),_v(".")]),_v(" "),_c('li',[_v("Our "),_c('strong',[_v("CampusConnect")]),_v(" logo reuses the "),_c('a',{attrs:{"href":"https://nus.edu.sg/identity/guidelines/logo-colour-and-background"}},[_c('strong',[_v("NUS logo")])])]),_v(" "),_c('li',[_v("Our help window icon uses a cartoon representation of the "),_c('a',{attrs:{"href":"https://www.reddit.com/r/nus/"}},[_c('strong',[_v("NUS mascot on the NUS main reddit page")])])])])}
 },function anonymous(
 ) {
 with(this){return _c('h2',{attrs:{"id":"setting-up-getting-started"}},[_c('strong',[_v("Setting up, getting started")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#setting-up-getting-started","onclick":"event.stopPropagation()"}})])}
@@ -407,6 +407,6 @@ with(this){return _c('p',[_v("Finally, our last major change was the tag managem
 with(this){return _c('p',[_v("Most commands implemented used the given "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Command")]),_v(" classes as a reference, but modified them to adapt the respective "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("execute()")]),_v(" methods for the command.")])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Fri, 8 Nov 2024, 12:30:31 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Fri, 8 Nov 2024, 12:30:47 GMT+8]")])])])}
 }];
   
