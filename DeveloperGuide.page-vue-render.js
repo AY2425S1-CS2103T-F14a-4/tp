@@ -269,7 +269,7 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to find contact.")
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. Input format is invalid.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. CampusConnect shows error message.")])]),_v(" "),_c('li',[_c('p',[_v("1a2. User enters input again.")]),_v(" "),_c('p',[_v("Steps 1a1-1a2 repeat until input format is valid.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. Contact to find does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. CampusConnect shows error message.")])]),_v(" "),_c('li',[_c('p',[_v("1b2. User enters input again.")]),_v(" "),_c('p',[_v("Steps 1b1-1b2 repeat until input format is valid.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
+with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. Input format is invalid.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. CampusConnect shows error message.")])]),_v(" "),_c('li',[_c('p',[_v("1a2. User enters input again.")]),_v(" "),_c('p',[_v("Steps 1a1-1a2 repeat until input format is valid.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. Contact to find does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. CampusConnect shows empty contact list.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Use case: UC04 - Add tags to a contact")]),_v(" "),_c('strong',[_v("Precondition")]),_v(": Contact to add tags to already exists")])}
@@ -314,7 +314,7 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to undo the most r
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. Input format is invalid.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. CampusConnect shows error message.")])]),_v(" "),_c('li',[_c('p',[_v("1a2. User enters input again.")]),_v(" "),_c('p',[_v("Steps 1a1-1a2 repeat until input format is valid.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. No earlier data to revert.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. CampusConnect shows error message.")]),_v(" "),_c('p',[_v("Use cases ends.")])])])])])}
+with(this){return _c('ul',[_c('li',[_v("1a. No earlier data to revert.\n"),_c('ul',[_c('li',[_c('p',[_v("1a1. CampusConnect shows error message.")]),_v(" "),_c('p',[_v("Use cases ends.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Use Case: UC07 - Redo Command Execution")])])}
@@ -332,7 +332,7 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("The user requests to redo the mo
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. Invalid Input Format:")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. CampusConnect displays an error message indicating the input format is invalid.")])]),_v(" "),_c('li',[_c('p',[_v("1a2. The user re-enters the input.")]),_v(" "),_c('p',[_v("Steps 1a1-1a2 repeat until the input format is valid.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. No More Commands to Redo:")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. CampusConnect displays an error message indicating that there are no more commands to redo.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
+with(this){return _c('ul',[_c('li',[_v("1a. No More Commands to Redo:\n"),_c('ul',[_c('li',[_c('p',[_v("1a1. CampusConnect displays an error message indicating that there are no more commands to redo.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"non-functional-requirements"}},[_v("Non-Functional Requirements"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#non-functional-requirements","onclick":"event.stopPropagation()"}})])}
@@ -407,6 +407,6 @@ with(this){return _c('p',[_v("Finally, our last major change was the tag managem
 with(this){return _c('p',[_v("Most commands implemented used the given "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Command")]),_v(" classes as a reference, but modified them to adapt the respective "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("execute()")]),_v(" methods for the command.")])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Sun, 10 Nov 2024, 15:49:34 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Sun, 10 Nov 2024, 16:51:20 GMT+8]")])])])}
 }];
   
