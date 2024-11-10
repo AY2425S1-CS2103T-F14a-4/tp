@@ -26,7 +26,7 @@ with(this){return _c('h2',{attrs:{"id":"features"}},[_v("Features"),_c('a',{stat
 with(this){return _c('p',[_c('strong',[_v("Notes about duplicate contacts:")]),_c('br')])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("A contact is considered a duplicate of another if it has the same Name, Phone or Email as the other contact.")]),_v(" "),_c('li')])}
+with(this){return _c('ul',[_c('li',[_v("A contact is considered a duplicate of another if it has the same Name, Phone or Email as the other contact.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Notes about case sensitivity:")]),_c('br')])}
@@ -224,6 +224,6 @@ with(this){return _c('h2',{attrs:{"id":"known-issues"}},[_v("Known Issues"),_c('
 with(this){return _c('ol',[_c('li',[_c('strong',[_v("When using multiple screens")]),_v(", if you move the application to a secondary screen, and later switch to using only the primary screen, the GUI will open off-screen. The remedy is to delete the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("preferences.json")]),_v(" file created by the application before running the application again.")]),_v(" "),_c('li',[_c('strong',[_v("If you minimize the Help Window")]),_v(" and then run the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("help")]),_v(" command (or use the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Help")]),_v(" menu, or the keyboard shortcut "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("F1")]),_v(") again, the original Help Window will remain minimized, and no new Help Window will appear. The remedy is to manually restore the minimized Help Window.")])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Sun, 10 Nov 2024, 17:59:34 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Sun, 10 Nov 2024, 18:02:46 GMT+8]")])])])}
 }];
   
